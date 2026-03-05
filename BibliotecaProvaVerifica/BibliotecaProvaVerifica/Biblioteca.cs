@@ -32,23 +32,5 @@ namespace BibliotecaProvaVerifica
             else
                 Console.WriteLine("Biblioteca piena!");
         }
-
-        // Ricerca per titolo
-        public Libro CercaPerTitolo(string titolo)
-        {
-            return elencoLibri.Find(l => l.Titolo.Equals(titolo, StringComparison.OrdinalIgnoreCase));
-        }
-
-        // Ricerca per autore
-        public List<Libro> CercaPerAutore(string autore)
-        {
-            return elencoLibri.Where(l => l.Autore.Equals(autore, StringComparison.OrdinalIgnoreCase)).ToList();
-        }
-
-        // Numero totale libri
-        public int NumeroLibri()
-        {
-            return elencoLibri.Count;
-        }
     }
 }
