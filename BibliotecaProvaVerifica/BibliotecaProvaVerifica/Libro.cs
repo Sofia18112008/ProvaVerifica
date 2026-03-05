@@ -12,7 +12,8 @@ namespace BibliotecaProvaVerifica
         public string Autore { get; set; }
         public int AnnoPubblicazione { get; set; }
         public string Genere { get; set; }
-
+        Console.WriteLine("Ciao");
+            
         public Libro(string titolo, string autore, int annoPubblicazione, string genere)
         {
             Titolo = titolo;
